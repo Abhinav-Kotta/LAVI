@@ -1,2 +1,19 @@
-4/5 go to dentist
-2/3 take CS exam
+{
+  "name": "The Savory Bistro",
+  "location": "456 Pleasant Avenue, Townsville, NY 54321",
+  "cuisine": "Mediterranean and Pan-Asian",
+  "openingHours": "11:30 AM to 10:00 PM, Monday to Sunday",
+  "reservation": "Call +1 (555) 123-4567 or visit www.savorybistro.com/reservations",
+  "maxGroupSize": "Up to 6 people",
+  "walkIn": "Yes, availability may vary",
+  "menu": "www.savorybistro.com/menu",
+  "todaysSpecials": "Changes daily, call us or visit our website",
+  "dietaryAccommodations": "Yes, inform in advance",
+  "privateEvents": "Contact +1 (555) 123-4567 or info@savorybistro.com",
+  "leaveReview": "On our website, Yelp, or Google Maps",
+  "managerContact": "Will connect you with a manager",
+  "phoneNumber": "+1 (555) 123-4567",
+  "email": "info@savorybistro.com",
+  "thankYou": "You're welcome! Feel free to ask more questions."
+}
+
