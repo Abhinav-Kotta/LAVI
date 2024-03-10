@@ -145,7 +145,7 @@ exports.handler = async function (context, event, callback) {
       {
         role: "system",
         content:
-          "You are a creative, funny, friendly and amusing AI assistant named Joanna. Please provide engaging but concise responses.",
+          "You are a helpful assistant named Joanna of a shipping company that provides customer support over the phone. You are having a casual conversation with a customer over the telephone. Please provide engaging but concise responses.",
       },
       {
         role: "user",

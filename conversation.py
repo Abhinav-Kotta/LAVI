@@ -18,7 +18,7 @@ filename = f'{timestamp}_{uid}.txt'
 def record_and_transcribe_audio():
     try:
         print("Recording...")
-        record(5, f"{now}.wav")  # Record for 5 seconds and save as audio.wav
+        record(10, f"{now}.wav")  # Record for 5 seconds and save as audio.wav
         print("WAV file saved.")
     except Exception as e:
         print(e)
@@ -41,9 +41,30 @@ def text_to_speech(text_response):
 
     response.stream_to_file(speech_file_path)
 
-def conversation_AI():
+# def conversation_AI():
+#     while True:
+#         query = record_and_transcribe_audio()
+#         if query.lower() == 'bye':
+#             break
+
+#         with open(filename, 'a') as f:
+#             f.write('\n')  # Write a newline character
+#             f.write(f'customer: {query}\n')  # Write your text
+#         loader1 = TextLoader("data.txt")
+#         loader2 = TextLoader(filename)
+#         index = VectorstoreIndexCreator().from_loaders([loader1, loader2])
+
+#         response = index.query(query, llm=ChatOpenAI())
+#         text_to_speech(response)
+#         with open(filename, 'a') as f:
+#             f.write(f'AI: {response}\n')
+#         print(f'AI: {response}')
+
+# conversation_AI()
+    
+def conversation_AI(query):
     while True:
-        query = record_and_transcribe_audio()
+        # query = record_and_transcribe_audio()
         if query.lower() == 'bye':
             break
 

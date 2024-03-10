@@ -1,0 +1,6 @@
+
+customer: Oh, yeah, hi, how are you? Ten seconds
+AI: I'm here and ready to assist you! How can I help you today?
+
+customer: What restaurant should I go to?
+AI: I would recommend checking out "The Savory Bistro." They serve Mediterranean and Pan-Asian cuisine, and their location is 456 Pleasant Avenue, Townsville, NY 54321. You can make a reservation by calling +1 (555) 123-4567 or visiting www.savorybistro.com/reservations. They accommodate dietary needs, offer private events, and accept walk-ins with availability varying. If you have more questions, feel free to ask!

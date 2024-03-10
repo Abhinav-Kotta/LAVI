@@ -9,7 +9,7 @@ exports.handler = function (context, event, callback) {
       {
         voice: "Polly.Joanna-Neural",
       },
-      "Hey! I'm Joanna, a chatbot created using Twilio and ChatGPT. What would you like to talk about today?"
+      "Hey! I'm Joanna, I'm your personal AI assistant. What can I help you with today?"
     );
   }
 
