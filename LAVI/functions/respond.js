@@ -1,10 +1,14 @@
 // Import required modules
 const { Configuration, OpenAIApi } = require("openai");
+const assetUrl =
+  "https://nutritious-tomatoes-5219.twil.io/Fictional_Box_Dimensions.txt";
 
 // Define the main function for handling requests
 exports.handler = async function (context, event, callback) {
   // Set up the OpenAI API with the API key
-  const configuration = new Configuration({ apiKey: context.OPENAI_API_KEY });
+  const configuration = new Configuration({
+    apiKey: process.env.OPENAI_API_KEY,
+  });
   const openai = new OpenAIApi(configuration);
 
   // Set up the Twilio VoiceResponse object to generate the TwiML
@@ -23,6 +27,7 @@ exports.handler = async function (context, event, callback) {
   let voiceInput = event.SpeechResult;
 
   // Create a conversation variable to store the dialog and the user's input to the conversation history
+
   const conversation = cookieData?.conversation || [];
   conversation.push(`user: ${voiceInput}`);
 
@@ -73,6 +78,11 @@ exports.handler = async function (context, event, callback) {
 
   // Function to generate the AI response based on the conversation history
   async function generateAIResponse(conversation) {
+    const assetResponse = await fetch(assetUrl);
+    const assetContent = await assetResponse.text();
+    conversation.assetContent = assetContent; // add the content to the conversation
+    console.log(conversation);
+
     const messages = formatConversation(conversation);
     return await createChatCompletion(messages);
   }
@@ -145,7 +155,7 @@ exports.handler = async function (context, event, callback) {
       {
         role: "system",
         content:
-          "You are a helpful assistant named Joanna of a shipping company that provides customer support over the phone. You are having a casual conversation with a customer over the telephone. Please provide engaging but concise responses.",
+          "You are a helpful assistant named Molly of a shipping company that provides customer support over the phone. You are having a casual conversation with a customer over the telephone. Please provide engaging but concise responses. Make sure to not say your name unless asked or when you introduce yourself.",
       },
       {
         role: "user",
