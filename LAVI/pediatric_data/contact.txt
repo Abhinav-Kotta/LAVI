@@ -1,0 +1,6 @@
+"clinic_info": {
+    "clinic_name": "Happy Kids Pediatrics",
+    "location": "123 Main Street, Cityville, State, Zip",
+    "contact_number": "123-456-7890",
+    "email": "info@happykidspediatrics.com"
+  }

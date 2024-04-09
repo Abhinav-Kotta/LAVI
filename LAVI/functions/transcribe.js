@@ -9,7 +9,7 @@ exports.handler = function (context, event, callback) {
       {
         voice: "Polly.Joanna-Neural",
       },
-      "Hey! I'm Molly, I'm your personal AI assistant. How can I help you today?"
+      "Hey! I'm Patiana. Your medical assistant at Happy Kids Pediatrics. How can I help you today?"
     );
   }
 

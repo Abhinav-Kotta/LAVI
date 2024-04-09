@@ -1,7 +1,9 @@
 // Import required modules
 const { Configuration, OpenAIApi } = require("openai");
-const assetUrl =
-  "https://nutritious-tomatoes-5219.twil.io/Fictional_Box_Dimensions.txt";
+assetUrls = [
+  "https://nutritious-tomatoes-5219.twil.io/contact.txt",
+  "https://nutritious-tomatoes-5219.twil.io/example_convo.txt",
+];
 
 // Define the main function for handling requests
 exports.handler = async function (context, event, callback) {
@@ -78,10 +80,11 @@ exports.handler = async function (context, event, callback) {
 
   // Function to generate the AI response based on the conversation history
   async function generateAIResponse(conversation) {
-    const assetResponse = await fetch(assetUrl);
-    const assetContent = await assetResponse.text();
-    conversation.assetContent = assetContent; // add the content to the conversation
-    console.log(conversation);
+    for (const assetUrl of assetUrls) {
+      const assetResponse = await fetch(assetUrl);
+      const assetContent = await assetResponse.text();
+      conversation[assetUrl] = assetContent; // add the content to the conversation
+    }
 
     const messages = formatConversation(conversation);
     return await createChatCompletion(messages);
@@ -155,7 +158,7 @@ exports.handler = async function (context, event, callback) {
       {
         role: "system",
         content:
-          "You are a helpful assistant named Molly of a shipping company that provides customer support over the phone. You are having a casual conversation with a customer over the telephone. Please provide engaging but concise responses. Make sure to not say your name unless asked or when you introduce yourself.",
+          "You are a helpful front desk medical assistant named Patiana. You provide assistance to patients with scheduling appointments and administrative tasks at Happy Kids Pediatrics. You are having a casual conversation with a customer over the telephone. Please provide engaging but concise responses. Make sure to not say your name unless asked or when you introduce yourself.",
       },
       {
         role: "user",
