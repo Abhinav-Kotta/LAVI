@@ -1,0 +1,46 @@
+{
+  "dialogues": [
+    {
+      "intent": "Appointment Scheduling",
+      "utterances": [
+        {"input": "I need to schedule an appointment for my child."},
+        {"input": "Can you help me book an appointment for my son's check-up?"},
+        {"input": "How can I schedule an appointment for my daughter's vaccination?"}
+      ],
+      "response": "Sure, I can help with that. When would you like to schedule the appointment?",
+      "follow_up_responses": [
+        "Great! Which day and time works best for you?",
+        "Certainly! Do you have any preferred dates in mind?",
+        "Absolutely! Let me check the available slots for you."
+      ]
+    },
+    {
+      "intent": "Prescription Refills",
+      "utterances": [
+        {"input": "I need to refill my child's prescription."},
+        {"input": "My son's medication needs a refill. Can you assist with that?"},
+        {"input": "Can I get a refill for my daughter's asthma inhaler?"}
+      ],
+      "response": "Of course. Could you please provide me with the prescription details?",
+      "follow_up_responses": [
+        "Sure! Please provide the medication name and dosage.",
+        "Certainly! Could you also confirm your child's date of birth?",
+        "Absolutely! I'll need the pharmacy details as well."
+      ]
+    },
+    {
+      "intent": "Insurance Verification",
+      "utterances": [
+        {"input": "Can you help me understand my insurance coverage?"},
+        {"input": "I'm not sure if my insurance covers pediatric visits. Can you check?"},
+        {"input": "What documents do I need for insurance verification?"}
+      ],
+      "response": "Absolutely. Please provide your insurance information, and I'll assist you further.",
+      "follow_up_responses": [
+        "Sure! Please provide your insurance policy number.",
+        "Certainly! Do you know the name of your insurance provider?",
+        "Great! Let me know if you have your insurance card handy."
+      ]
+    }
+  ]
+}
