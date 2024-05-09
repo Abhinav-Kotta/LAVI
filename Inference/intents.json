@@ -1,0 +1,146 @@
+{
+    "intents": [
+      {"tag": "greeting",
+        "responses": [
+          "Hello there!",
+          "Hey, how can I assist you today?",
+          "Greetings! What brings you here?",
+          "Hi, it's great to see you!",
+          "Hey, nice to meet you!",
+          "Well, hello!",
+          "Hello! How may I help you?",
+          "Hey, good to have you here!"
+        ]
+      },
+      {"tag": "introduction",
+        "responses": [
+          "I am an AI-powered virtual assistant here to assist you.",
+          "I'm your virtual companion, ready to help with your queries.",
+          "I am your digital assistant, here to provide support and information.",
+          "I'm an AI-driven virtual presence designed to aid you in your tasks.",
+          "I'm your chatbot companion, programmed to assist and guide you."
+        ]
+      },
+      {"tag": "goodbye",
+        "responses": [
+          "Goodbye! Have a wonderful day.",
+          "Farewell! Feel free to return anytime.",
+          "Take care! Until we chat again.",
+          "Goodbye! It was a pleasure assisting you.",
+          "Adios! Wishing you a great day ahead.",
+          "Until next time! Stay safe and take care."
+        ]
+      },
+      {"tag": "communication",
+        "responses": [
+          "Effective communication is fostered through scheduled meetings, instant messaging platforms, and streamlined project collaboration tools.",
+          "Teams maintain connectivity through various channels including video conferences, messaging apps, and project management software.",
+          "The company encourages interaction among teams using tools like video calls, email threads, and shared project boards.",
+          "To enhance collaboration, teams utilize tools like virtual meetings, chat applications, and centralized task management systems.",
+          "Effective team communication involves regular sync-ups, email correspondence, and shared documents for seamless collaboration."
+        ]
+      },
+      {"tag": "noanswer",
+        "responses": [
+            "Apologies, it seems I'm unable to provide a suitable response at the moment.",
+            "I'm sorry, that's beyond my current capabilities to assist with. Is there something else I can help you with?",
+            "I'm still learning! Can you try rephrasing or ask another question?",
+            "It seems I don't have an answer for that right now. Could you try asking in a different way?"
+          ]
+      },
+      {"tag": "FAQ",
+        "responses": [
+          "Exploring information? I'm here to assist with frequently asked questions.",
+          "If you have any questions on your mind, feel free to ask! I'm here to help.",
+          "Need answers? I can guide you through commonly asked questions. Ask away!",
+          "I specialize in frequently asked questions. How can I assist you today?"
+        ]
+      },
+      { "tag": "help",
+        "responses": [
+          "How can I assist you?",
+          "I'm here to help. What do you need?",
+          "Do you need technical support?",
+          "How can I assist with your issue?"
+        ]
+      },
+      {"tag": "feedback",
+        "responses": [
+        "We highly value your feedback as it helps us improve and better serve our employees/customers.",
+        "Your input is crucial to us. Please share your thoughts as we strive to continuously enhance our services/work environment.",
+        "Feedback is instrumental in our continuous improvement process. Your perspectives matter, and we're here to listen.",
+        "We encourage open and honest feedback to ensure we meet your expectations and create a better experience for everyone.",
+        "Thank you for taking the time to share your feedback. It contributes to our ongoing efforts to improve and grow."
+      ]
+      },
+      {"tag": "leadership",
+        "responses": [
+          "Our leadership style is characterized by a visionary approach, empowering teams to innovate and excel.",
+          "Leadership here is marked by a participative and inclusive approach, fostering open communication and collaboration.",
+          "We embrace a transformational leadership style, inspiring and guiding teams toward achieving ambitious goals.",
+          "Our leadership style emphasizes mentorship and guidance, nurturing talent and fostering professional growth.",
+          "The leadership approach is defined by adaptability, encouraging flexibility and resilience in navigating challenges."
+        ]
+      },
+      {"tag": "work",
+        "responses": [
+          "Our collaborative work environment encourages innovation and creativity among our teams.",
+          "We prioritize a supportive work culture that values collaboration, creativity, and mutual respect.",
+          "The company cultivates an environment that promotes teamwork, innovation, and a shared passion for excellence.",
+          "We strive to maintain a positive work culture that values diversity, fosters collaboration, and encourages new ideas.",
+          "Our commitment to work-life balance includes initiatives that support our employees' well-being and productivity."
+        ]
+      },
+      {"tag": "salary",
+        "responses": [
+          "Our compensation packages are designed to be competitive, reflecting the skills, experience, and contributions of our employees.",
+          "We offer competitive salaries that align with industry standards and reward the expertise and value our employees bring to the table.",
+          "Salary packages are crafted to be fair and competitive, taking into account the individual's expertise, qualifications, and market benchmarks.",
+          "The company ensures that salaries are competitive and based on factors such as experience, skill set, and market standards.",
+          "Our goal is to provide fair compensation packages that acknowledge the skills, qualifications, and dedication of our employees."
+        ]
+      },
+      {"tag": "career",
+        "responses": [
+          "At our company, we foster continuous learning and provide avenues for career advancement and skill development.",
+          "Career growth is a priority here, and employees are supported through mentorship programs, training, and pathways for advancement.",
+          "We believe in empowering our employees' career paths through ongoing learning, skill-building opportunities, and internal mobility programs.",
+          "Our commitment to career growth is evident through personalized development plans, mentorship networks, and resources for professional advancement.",
+          "Employees are encouraged to explore various growth opportunities, including mentorship, training programs, and career path guidance."
+        ]
+      },
+      {"tag": "diversity",
+        "responses": [
+          "Diversity and inclusion are fundamental values embedded in our company culture, supported by ongoing programs and inclusive policies.",
+          "Our commitment to diversity and inclusion is evident through tailored programs, equitable policies, and a welcoming work environment.",
+          "We foster a diverse and inclusive workplace by championing programs, policies, and initiatives that celebrate differences and encourage belonging.",
+          "Embracing diversity and inclusion is integral to our ethos, reflected in our policies, programs, and collective efforts to create a supportive environment.",
+          "Through proactive initiatives, inclusive policies, and a welcoming atmosphere, we prioritize diversity and inclusion as core aspects of our company."
+        ]
+      },
+      {"tag": "job",
+        "responses": [
+            "This role requires strong communication skills to effectively interact with team members and stakeholders.",
+            "The position emphasizes the ability to collaborate in a team-oriented environment to achieve common goals.",
+            "In this role, excellent problem-solving skills are essential to tackle challenges and find innovative solutions.",
+            "As part of this position, adaptability and flexibility are key traits to navigate evolving work demands.",
+            "This role values strong organizational skills to manage tasks efficiently and prioritize workload."
+          ]
+      },
+      {"tag": "company",
+        "responses": [
+            "Our company is committed to innovation, fostering a collaborative environment where creativity thrives.",
+            "We're a forward-thinking company dedicated to delivering top-notch solutions and creating an inclusive workplace.",
+            "At our company, we prioritize excellence, pushing boundaries to achieve impactful results while nurturing our diverse talent.",
+            "Our company is known for its dedication to quality, innovation, and creating a supportive culture for our employees."
+          ]
+      },
+      {"tag": "menu",
+        "responses": [
+          "Please select an option",
+          "Which option would you like to select?",
+          "What would you like to do?"
+        ]
+      }
+    ]
+  }
