@@ -91,7 +91,7 @@ loaded_model = BERT_Arch(bert)
 loaded_model = loaded_model.to(device)
 
 # Load the saved weights
-loaded_model.load_state_dict(torch.load('/Users/kapoor/Desktop/Undergrad/Ezo_Github/ezohire/main/chatbot/bert_model.pth', map_location=torch.device('cpu')))
+loaded_model.load_state_dict(torch.load('./bert_model.pth', map_location=torch.device('cpu')))
 
 # Set the model to evaluation mode
 loaded_model.eval()
