@@ -4,6 +4,10 @@ import re
 import json
 import random
 import torch.nn as nn
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'pymongo-test')))
+from main import add_customer
 
 device = torch.device('cpu')
 tokenizer = DistilBertTokenizer.from_pretrained('distilbert-base-uncased')
@@ -132,4 +136,5 @@ def classify_intent(sample_sentence):
 if __name__ == '__main__':
     while True:
         sentence = input("Enter a sentence: ")
-        print(classify_intent(sentence))
+        intent = classify_intent(sentence)
+        print(intent)
