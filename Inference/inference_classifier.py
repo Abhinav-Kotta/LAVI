@@ -7,7 +7,7 @@ import torch.nn as nn
 import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'pymongo-test')))
-from main import add_customer
+from main import *
 
 device = torch.device('cpu')
 tokenizer = DistilBertTokenizer.from_pretrained('distilbert-base-uncased')
@@ -138,3 +138,36 @@ if __name__ == '__main__':
         sentence = input("Enter a sentence: ")
         intent = classify_intent(sentence)
         print(intent)
+
+        # phone will be fetched from twilio
+        phone = "0001112222"
+        date = "1999-1-1"
+        newDate = "2024-1-13"
+
+        addName = "Sam Alkhazraji"
+        addNumber = "8135027212"
+        addDate = "2003-8-27"
+
+        # FOR TESTING PURPOSES
+        # greeting = schedule appointment
+        # menue = reschedule appointment
+        # career growth = cancel appointment
+        # communication methods = get appointment
+        # no answer = add new customer
+
+        match intent[0]:
+            case 'noanswer':
+                schedule_appointment(phone, date)
+            
+            case 'menu':
+                reschedule_customer_appt(date, newDate, phone)
+
+            case 'career growth':
+                cancel_appointment(phone, date)
+            
+            case 'communication methods':
+                get_appointments(phone)
+            
+            case 'greeting':
+                add_customer(addNumber, addName, addDate)
+

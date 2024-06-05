@@ -53,6 +53,9 @@ def schedule_appointment(phone, date):
     if not check_appointment_available(date):
         return False
     customer = get_single_customer_by_phone(phone)
+    if customer is None:
+        print("Customer not found")
+        return False
     customer['appointment_dates'].append(date)
     collection.update_one(
         {"name": customer['name']}, {"$set": {"appointment_dates": customer['appointment_dates']}})
@@ -63,5 +66,18 @@ def check_appointment_available(date):
         if "appointment_dates" in customer.keys() and date in customer['appointment_dates']:
             return False
     return True
+
+def cancel_appointment(phone, date):
+    customer = get_single_customer_by_phone(phone)
+    if customer is None:
+        return False
+    customer['appointment_dates'].remove(date)
+    collection.update_one(
+        {"name": customer['name']}, {"$set": {"appointment_dates": customer['appointment_dates']}})
+    return True
+
+def get_appointments(phone):
+    customer = get_single_customer_by_phone(phone)
+    return customer['appointment_dates']
 
 
